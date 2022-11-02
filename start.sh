@@ -1,12 +1,12 @@
 #!/bin/sh
 
 # configs
-AUUID=2ee7217b-95fb-3r8d-930a-c4254209bcdd
-CADDYIndexPage=https://github.com/AYJCSGM/mikutap/archive/master.zip
-CONFIGCADDY=https://raw.githubusercontent.com/用户名/项目地址/master/etc/Caddyfile
-CONFIGXRAY=https://raw.githubusercontent.com/用户名/项目地址/master/etc/wry.json
+AUUID=e6efe058-26a6-4dc8-875e-2128b0eff9eb
+CADDYIndexPage=https://github.com/tailwindtoolbox/Landing-Page/archive/master.zip
+CONFIGCADDY=https://raw.githubusercontent.com/floweryea/railra1/master/etc/Caddyfile
+CONFIGXRAY=https://raw.githubusercontent.com/floweryea/railra1/master/etc/wry.json
 ParameterSSENCYPT=chacha20-ietf-poly1305
-StoreFiles=https://raw.githubusercontent.com/用户名/项目地址/etc/StoreFiles
+StoreFiles=https://raw.githubusercontent.com/floweryea/railra1/etc/StoreFiles
 #PORT=4433
 mkdir -p /etc/caddy/ /usr/share/caddy && echo -e "User-agent: *\nDisallow: /" >/usr/share/caddy/robots.txt
 wget $CADDYIndexPage -O /usr/share/caddy/index.html && unzip -qo /usr/share/caddy/index.html -d /usr/share/caddy/ && mv /usr/share/caddy/*/* /usr/share/caddy/
